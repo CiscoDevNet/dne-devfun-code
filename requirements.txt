@@ -1,0 +1,6 @@
+Flask==1.1.1
+netifaces==0.10.9
+paho-mqtt==1.5.0
+requests==2.22.0
+requests-toolbelt==0.9.1
+webexteamssdk==1.2
