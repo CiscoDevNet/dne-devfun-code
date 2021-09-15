@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-"""Working with nested data hands-on exercise / coding challenge.
+"""Python Interpreter and Basics Exercise.
 
 Copyright (c) 2018-2021 Cisco and/or its affiliates.
 
@@ -23,17 +22,30 @@ SOFTWARE.
 """
 
 
-import json
-import os
+import math
+import random
 
 
-# Get the absolute path for the directory where this file is located "here"
-here = os.path.abspath(os.path.dirname(__file__))
+# TODO: Write a print statement that displays both the type and value of `pi`
+pi = math.pi
 
 
-with open(os.path.join(here, "interfaces.json")) as file:
-    # TODO: Parse the contents of the JSON file into a variable
+# TODO: Write a conditional to print out if `i` is less than or greater than 50
+i = random.randint(0, 100)
 
 
-# TODO: Loop through the interfaces in the JSON data and print out each
-# interface's name, ip, and netmask.
+# TODO: Write a conditional that prints the color of the selected sportsball
+picked_sportsball = random.choice(['tennis', 'basketball', 'golf'])
+
+
+# TODO: Write a function that multiplies two numbers and returns the result
+# Define the function here.
+
+
+# TODO: Now call the function a few times to calculate the following answers
+
+print("12 x 96 =",)
+
+print("48 x 17 =",)
+
+print("196523 x 87323 =",)
