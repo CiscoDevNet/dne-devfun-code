@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Script flow and debugging. Print your own fortune cookie!
+"""Script flow and debugging. Find a fortune!
 
 Copyright (c) 2018-2021 Cisco and/or its affiliates.
 
