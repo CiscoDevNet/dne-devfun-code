@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Working with nested data hands-on exercise / coding challenge.
+"""Demonstrate module vs. locally scoped variables.
 
 Copyright (c) 2018-2021 Cisco and/or its affiliates.
 
@@ -23,17 +23,28 @@ SOFTWARE.
 """
 
 
-import json
-import os
+# Create a module variable
+module_variable = "I am a module variable."
 
 
-# Get the absolute path for the directory where this file is located "here"
-here = os.path.abspath(os.path.dirname(__file__))
+# Define a function that expects to receive a value for an argument variable
+def my_function(argument_variable):
+    """Showing how module, argument, and local variables are used."""
+    # Create a local variable
+    local_variable = "I am a local variable."
+
+    print(module_variable, "...and I can be accessed inside a function.")
+    print(argument_variable, "...and I can be passed to a function.")
+    print(local_variable, "...and I can ONLY be accessed inside a function.")
 
 
-with open(os.path.join(here, "interfaces.json")) as file:
-    # TODO: Parse the contents of the JSON file into a variable
+# Call the function; supplying the value for the argument variable
+my_function(argument_variable="I am a argument variable.")
 
 
-# TODO: Loop through the interfaces in the JSON data and print out each
-# interface's name, ip, and netmask.
+# Let's try accessing that local variable here at module scope
+print("\nTrying to access local_variable outside of its function...")
+try:
+    print(local_variable)
+except NameError as error:
+    print(error)

@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-"""Working with nested data hands-on exercise / coding challenge.
+!/usr/bin/env python
+"""Module docstring.
 
 Copyright (c) 2018-2021 Cisco and/or its affiliates.
 
@@ -23,17 +23,32 @@ SOFTWARE.
 """
 
 
-import json
+# Imports
 import os
+import sys
 
 
-# Get the absolute path for the directory where this file is located "here"
-here = os.path.abspath(os.path.dirname(__file__))
+# Module Constants
+START_MESSAGE = "CLI Inspection Script"
 
 
-with open(os.path.join(here, "interfaces.json")) as file:
-    # TODO: Parse the contents of the JSON file into a variable
+# Module "Global" Variables
+location = os.path.abspath(__file__)
 
 
-# TODO: Loop through the interfaces in the JSON data and print out each
-# interface's name, ip, and netmask.
+# Module Functions and Classes
+def main(*args):
+    """My main script function.
+
+    Displays the full patch to this script, and a list of the arguments passed
+    to the script.
+    """
+    print(START_MESSAGE)
+    print("Script Location:", location)
+    print("Arguments Passed:", args)
+
+
+# Check to see if this file is the "__main__" script being executed
+if __name__ == '__main__':
+    _, *script_args = sys.argv
+    main(*script_args)
