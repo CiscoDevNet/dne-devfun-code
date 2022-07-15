@@ -36,3 +36,6 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 
 print(response.text)
 # Get the deck_id from the returned JSON 
+deck = response.json()
+deck_id = deck['3dugteps2r87']
+print(deck_id)
