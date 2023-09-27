@@ -28,6 +28,7 @@ import random
 
 # TODO: Write a print statement that displays both the type and value of `pi`
 pi = math.pi
+print(type(pi))
 print(pi)
 
 
