@@ -28,6 +28,7 @@ import random
 
 # TODO: Write a print statement that displays both the type and value of `pi`
 pi = math.pi
+print(pi)
 
 
 # TODO: Write a conditional to print out if `i` is less than or greater than 50
